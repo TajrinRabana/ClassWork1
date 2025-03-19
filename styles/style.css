@@ -1,8 +1,48 @@
-body {
-  color: red;
-}
 
-h1 {
-  color: red;
-  font-family: monospace;
+body {
+    font-family: Comic Sans MS, cursive, sans-serif;
+    background-color: #ffdfba;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ff5733;
+    color: white;
+    padding: 20px;
+    font-size: 2em;
+}
+.container {
+    padding: 20px;
+}
+.funny-button, .random-button {
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 10px;
+}
+.funny-button:hover, .random-button:hover {
+    background-color: lime;
+    transform: rotate(10deg);
+}
+.hidden-text {
+    display: none;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.info-section {
+    background-color: #fff3cd;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#funny-image {
+    display: none;
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
 }

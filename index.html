@@ -1,15 +1,52 @@
+
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>WEBSITE TITLE HERE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugly Website</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css" media="screen" />
+
 </head>
-    
 <body>
-    <h1>Hiiiii bbbb cjjjj</h1>
+    <header>Welcome to the Most Serious and Interactive Website Ever</header>
+    
+    <div class="container">
+        <p>This is a serious website. NO jokes.</p>
+        
+        <section class="info-section">
+            <h2>Memes</h2>
+            <p>Let's laugh together!</p>
+           
+            <img class="funny-button" src="https://digitalsynopsis.com/wp-content/uploads/2017/12/funny-agency-life-creative-designer-copywriter-memes-1.jpg" height="300" width="300">
+            <img class="random-button" src="https://www.boredpanda.com/blog/wp-content/uploads/2023/06/classic-funny-memes-jokes-14-647f210121f20__700.jpg" height="300" width="300">
+        </section>
+        
+        <section class="info-section">
+            <h2>Fun Facts About Memes</h2>
+          
+                <li>Makes you Laugh and keeps your lung healthy</li>
+                
+            
+        </section>
+        
+        <button class="funny-button" onclick="revealJoke()">DO NOT PRESS</button>
+        <p id="joke" class="hidden-text">Told You not to press!!!! You don't listen at all!!!</p>
+        
+        <button class="random-button" onclick="showRandomImage()">Press for Random Picture</button>
+        <img id="funny-image" src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="Funny GIF">
+    </div>
+    
+    <script>
+        function revealJoke() {
+            document.getElementById("joke").style.display = "block";
+            alert("You were warned!");
+        }
+
+        function showRandomImage() {
+            document.getElementById("funny-image").style.display = "block";
+        }
+    </script>
 </body>
-
-<script src="main.js"></script>
-
-</html> 
+</html>
